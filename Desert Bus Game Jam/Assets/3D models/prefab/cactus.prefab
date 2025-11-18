@@ -125,4 +125,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OnCactusCollision
   newModel: {fileID: 3303001776923006322, guid: 0cb28d78583c07e468a0eb2f8362fbc1, type: 3}
-  brokenCactusCopy: {fileID: 0}

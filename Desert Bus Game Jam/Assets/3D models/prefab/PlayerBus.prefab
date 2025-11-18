@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 967834246974157253}
   - component: {fileID: 4608420586470502078}
   - component: {fileID: 2178488939123462718}
+  - component: {fileID: 2251408455956306786}
   m_Layer: 0
   m_Name: PlayerBus
   m_TagString: Untagged
@@ -244,6 +245,20 @@ MonoBehaviour:
   acceleration: 600
   breakingForce: 300
   maxTurnAngle: 22
+--- !u!114 &2251408455956306786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3622071860079538004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62252986b6bbc97489ae05469ffbb25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBus
+  maxPassengers: 10
+  rb: {fileID: 4608420586470502078}
 --- !u!1 &3667472247017993289
 GameObject:
   m_ObjectHideFlags: 0
