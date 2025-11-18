@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class passengerDropOff : MonoBehaviour
@@ -47,7 +48,7 @@ public class passengerDropOff : MonoBehaviour
                 if (distanceFromDestination < 5)
                 {
                     passengers.RemoveAt(i);
-                    Destroy(passenger);
+                    passengerScript.Delivered();
                     timer = 0;
                 }
             }

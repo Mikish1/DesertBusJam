@@ -5,7 +5,7 @@ public class BusStop : MonoBehaviour
 {
     [SerializeField] private List<GameObject> passengers;
     private PlayerBusController playerBus;
-    private float maxBusMagnitude = 0.003f;
+    private float maxBusMagnitude = 0.05f;
     private float timer = 0;
 
 
@@ -21,7 +21,6 @@ public class BusStop : MonoBehaviour
         float busMagnitude = Mathf.Abs(playerBus.busVelocity());
         timer += Time.deltaTime;
 
-
         // Check if player is moving too fast
         if (busMagnitude > maxBusMagnitude)
         {
@@ -34,7 +33,7 @@ public class BusStop : MonoBehaviour
         {
             Debug.Log("pick up");
 
-            // Transger passenger from bus stop to the bus
+            // Transfer passenger from bus stop to the bus
             GameObject passenger = passengers[0];
             passengers.RemoveAt(0);
             playerBus.getPassengers(passenger);

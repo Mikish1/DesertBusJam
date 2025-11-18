@@ -7,12 +7,16 @@ public class Passenger : MonoBehaviour
     private float timeRemaining;
     private bool onBus;
 
+    private ScoreManager scoreManager;
+
+
 
     private void Awake()
     {
         onBus = false;
         timeRemaining = 60;
         destinationLocation = destination.transform.position;
+        scoreManager = GameObject.FindWithTag("Score").GetComponent<ScoreManager>();
     }
 
     private void Update()
@@ -31,6 +35,12 @@ public class Passenger : MonoBehaviour
     public Vector3 GetDestinationVector()
     {
         return destinationLocation;
+    }
+
+    public void Delivered()
+    {
+        scoreManager.updateScore(timeRemaining);
+        Destroy(gameObject);
     }
 
 }
