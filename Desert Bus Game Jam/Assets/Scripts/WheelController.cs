@@ -46,10 +46,10 @@ public class WheelController : MonoBehaviour
         frontRightWheel.steerAngle = currentTurnAngle;
 
         //Update w
-        //UpdateWheel(frontLeftWheel, frontLeftWheelTransform);
-        //UpdateWheel(backLeftWheel, backLeftWheelTransform);
-        //UpdateWheel(frontRightWheel, frontRightWheelTransform);
-        //UpdateWheel(backRightWheel, backRightWheelTransform);
+        UpdateWheel(frontLeftWheel, frontLeftWheelTransform);
+        UpdateWheel(backLeftWheel, backLeftWheelTransform);
+        UpdateWheel(frontRightWheel, frontRightWheelTransform);
+        UpdateWheel(backRightWheel, backRightWheelTransform);
     }
 
     void UpdateWheel(WheelCollider col, Transform wheelTransform)

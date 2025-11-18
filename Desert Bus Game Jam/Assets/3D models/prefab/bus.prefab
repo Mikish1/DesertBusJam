@@ -75,5 +75,80 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8362057387515881777}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266377893795694148}
   m_SourcePrefab: {fileID: 100100000, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+--- !u!4 &742824246364797840 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1450233297811159199, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+  m_PrefabInstance: {fileID: 7030319991481908465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5208895508850062366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6207930513765070609, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+  m_PrefabInstance: {fileID: 7030319991481908465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6410943557105216473 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5086664070639200472, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+  m_PrefabInstance: {fileID: 7030319991481908465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7247371151226388761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 361241664554565096, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+  m_PrefabInstance: {fileID: 7030319991481908465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7877322523083669920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9af33ff401e9907499017f17d434f272, type: 3}
+  m_PrefabInstance: {fileID: 7030319991481908465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8362057387515881777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877322523083669920}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.048, y: 0.015802639, z: 0.016952276}
+  m_Center: {x: 0, y: 0, z: 0.0030549716}
+--- !u!114 &1266377893795694148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877322523083669920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef495aefeed4124e9a1ef36fe8435b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheelController
+  frontLeftWheel: {fileID: 0}
+  backLeftWheel: {fileID: 0}
+  frontRightWheel: {fileID: 0}
+  backRightWheel: {fileID: 0}
+  frontLeftWheelTransform: {fileID: 5208895508850062366}
+  backLeftWheelTransform: {fileID: 6410943557105216473}
+  frontRightWheelTransform: {fileID: 742824246364797840}
+  backRightWheelTransform: {fileID: 7247371151226388761}
+  acceleration: 500
+  breakingForce: 300
+  maxTurnAngle: 15
