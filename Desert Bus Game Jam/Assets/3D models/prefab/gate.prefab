@@ -104,7 +104,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -125,4 +125,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OnCactusCollision
   newModel: {fileID: 5827695292918332490, guid: 36b0e356ae830ce4ebf9207af9528b7a, type: 3}
-  brokenModelCopy: {fileID: 0}
