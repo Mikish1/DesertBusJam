@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class passengerDropOff : MonoBehaviour
 {
-
+    [SerializeField] private string destinationType;
     private PlayerBusController playerBus;
     private List<GameObject> passengers;
     private float maxBusMagnitude = 0.003f;

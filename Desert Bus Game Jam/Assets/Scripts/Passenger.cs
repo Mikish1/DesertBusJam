@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Passenger : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Passenger : MonoBehaviour
     private bool onBus;
 
     private ScoreManager scoreManager;
+
+    [SerializeField] private UnityEvent OnPassengerPickup;
 
 
 
@@ -29,6 +32,7 @@ public class Passenger : MonoBehaviour
 
     public void OnBusTrue()
     {
+        OnPassengerPickup.Invoke();
         onBus = true;
     }
 

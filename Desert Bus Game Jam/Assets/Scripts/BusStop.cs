@@ -9,6 +9,16 @@ public class BusStop : MonoBehaviour
     private float timer = 0;
 
 
+
+    private void Awake()
+    {
+        foreach (Transform child in transform)
+        {
+            passengers.Add(child.gameObject);
+            Debug.Log(child);
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         //reset timer when exiting zone

@@ -66,6 +66,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2dc2bf64b8b64df41adf03f39fc73a3a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4612365376242619394}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2dc2bf64b8b64df41adf03f39fc73a3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1636923490379935222}
   m_SourcePrefab: {fileID: 100100000, guid: 2dc2bf64b8b64df41adf03f39fc73a3a, type: 3}
 --- !u!1 &7774314281321979399 stripped
 GameObject:
@@ -114,3 +117,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0531663, y: 0.05382688, z: 0.04617988}
   m_Center: {x: 2.5278028e-16, y: 0.00030088448, z: 0.011544971}
+--- !u!114 &1636923490379935222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774314281321979399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05e07bc90d303f4785357384871e9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BusStop
+  passengers: []
