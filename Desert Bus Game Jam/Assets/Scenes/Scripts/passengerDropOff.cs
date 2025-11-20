@@ -9,6 +9,7 @@ public class passengerDropOff : MonoBehaviour
     private List<GameObject> passengers;
     private float maxBusMagnitude = 0.003f;
     private float timer = 0;
+    private float maxTime = 0.5f;
 
 
     private void OnTriggerExit(Collider other)
@@ -34,7 +35,7 @@ public class passengerDropOff : MonoBehaviour
             timer = 0;
             return;
         }
-        if (timer >= 1) {
+        if (timer >= maxTime) {
             for (int i = 0; i < passengers.Count; i++)
             {
                 GameObject passenger = passengers[i];

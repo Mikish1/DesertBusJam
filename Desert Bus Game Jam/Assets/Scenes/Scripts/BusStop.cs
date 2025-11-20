@@ -3,19 +3,21 @@ using UnityEngine;
 
 public class BusStop : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> passengers;
+    private List<GameObject> passengers;
     private PlayerBusController playerBus;
     private float maxBusMagnitude = 0.05f;
     private float timer = 0;
+    private float maxTime = 0.5f;
 
 
 
     private void Awake()
+
     {
+        passengers = new List<GameObject>();
         foreach (Transform child in transform)
         {
             passengers.Add(child.gameObject);
-            Debug.Log(child);
         }
     }
 
@@ -39,7 +41,7 @@ public class BusStop : MonoBehaviour
         }
         
         // Check if there are any passengers to pick up and if the bus is full
-        if (passengers.Count > 0 && playerBus.isBusFull() && timer >= 1)
+        if (passengers.Count > 0 && playerBus.isBusFull() && timer >= maxTime)
         {
             Debug.Log("pick up");
 

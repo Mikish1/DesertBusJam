@@ -4,13 +4,13 @@ using UnityEngine.Events;
 public class Passenger : MonoBehaviour
 {
     [SerializeField] private GameObject destination;
+    [SerializeField] private string destinationType;
     Vector3 destinationLocation;
     private float timeRemaining;
     private bool onBus;
 
     private ScoreManager scoreManager;
-
-    [SerializeField] private UnityEvent OnPassengerPickup;
+    private EventManager eventManager;
 
 
 
@@ -20,6 +20,7 @@ public class Passenger : MonoBehaviour
         timeRemaining = 60;
         destinationLocation = destination.transform.position;
         scoreManager = GameObject.FindWithTag("Score").GetComponent<ScoreManager>();
+        eventManager = GameObject.Find("EventManager").GetComponent<EventManager>();
     }
 
     private void Update()
@@ -32,7 +33,7 @@ public class Passenger : MonoBehaviour
 
     public void OnBusTrue()
     {
-        OnPassengerPickup.Invoke();
+        eventManager.CheckPickupType(destinationType, true);
         onBus = true;
     }
 
@@ -43,6 +44,7 @@ public class Passenger : MonoBehaviour
 
     public void Delivered()
     {
+        eventManager.CheckPickupType(destinationType, false);
         scoreManager.updateScore(timeRemaining);
         Destroy(gameObject);
     }

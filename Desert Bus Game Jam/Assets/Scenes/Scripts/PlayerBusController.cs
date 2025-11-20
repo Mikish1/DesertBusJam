@@ -6,7 +6,7 @@ public class PlayerBusController : MonoBehaviour
 {
     [SerializeField] private int maxPassengers = 10;
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private List<GameObject> passengers;
+    private List<GameObject> passengers;
     private int currentPassengers;
 
 

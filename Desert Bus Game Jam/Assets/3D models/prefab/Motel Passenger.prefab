@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7710062100616231912
+--- !u!1001 &984927626301700232
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,39 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
       propertyPath: destinationType
-      value: GasStation
-      objectReference: {fileID: 0}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6784792871678051670, guid: 62a010fc7b7c7cb40a5b0e07a7cca60d, type: 3}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdatePassengerCount
-      objectReference: {fileID: 0}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PassengerTypeCounter, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: -6653307372827867926, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
-      propertyPath: OnPassengerPickup.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: Motel
       objectReference: {fileID: 0}
     - target: {fileID: 107341839738170743, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
       propertyPath: m_Name
-      value: Passenger Gas Station
+      value: Motel Passenger
       objectReference: {fileID: 0}
     - target: {fileID: 5343496616235341576, guid: 2a984551f6854e342b30b66baab27f4b, type: 3}
       propertyPath: m_LocalPosition.x
