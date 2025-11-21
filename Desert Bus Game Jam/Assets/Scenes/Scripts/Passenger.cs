@@ -45,8 +45,13 @@ public class Passenger : MonoBehaviour
     public void Delivered()
     {
         eventManager.CheckPickupType(destinationType, false);
+        eventManager.decreaseTotalCount(destinationType);
         scoreManager.updateScore(timeRemaining);
         Destroy(gameObject);
     }
 
+    public string GetDestinationType()
+    {
+        return destinationType;
+    }
 }

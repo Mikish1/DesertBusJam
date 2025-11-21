@@ -55,6 +55,10 @@ public class passengerDropOff : MonoBehaviour
             }
         }
 
-        
+    }
+
+    public void DeleteSelf()
+    {
+        Destroy(gameObject, 1f);
     }
 }

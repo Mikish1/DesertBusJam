@@ -19,6 +19,7 @@ public class BusStop : MonoBehaviour
         {
             passengers.Add(child.gameObject);
         }
+        ListExtension.Shuffle(passengers);
     }
 
     private void OnTriggerExit(Collider other)
@@ -52,5 +53,7 @@ public class BusStop : MonoBehaviour
             timer = 0;
         }
     }
+
+
 
 }
